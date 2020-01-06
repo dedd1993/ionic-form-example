@@ -25,6 +25,7 @@ export class FormExampleComponent {
 
   private initFormBuilder() {
     this.form = new FormGroup({
+      storeCode: new FormControl({ value: null, disabled: false }, [ ]),
       email: new FormControl({ value: null, disabled: false }, [ Validators.required, Validators.email ]),
       password: new FormControl({ value: null, disabled: false }, [ Validators.required ]),
       role: new FormControl({ value: null, disabled: false }, [ Validators.required ]),
