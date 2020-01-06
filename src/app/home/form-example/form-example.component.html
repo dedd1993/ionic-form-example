@@ -1,7 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <ion-item class="mb-16">
-    <ion-label position="floating">Store code</ion-label>
-    <ion-input type="text" placeholder="Store code" formControlName="storeCode" appOnlyDigits></ion-input>
+    <ion-label position="floating">DNI</ion-label>
+    <ion-input type="text" placeholder="DNI" formControlName="documentNumber" appOnlyDigits #dniElemRef></ion-input>
   </ion-item>
 
   <ion-item class="mb-16">
